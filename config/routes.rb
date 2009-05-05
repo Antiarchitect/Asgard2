@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :metadatas
+
   map.resources :doctoral_conclusions
 
   map.resources :personal_datas

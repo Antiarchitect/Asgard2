@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name_in_model: MyString
+  name_in_view: MyString
+  description: MyText
+  unit: MyString
+
+two:
+  name_in_model: MyString
+  name_in_view: MyString
+  description: MyText
+  unit: MyString
