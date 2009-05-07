@@ -7,7 +7,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :visits
 
-  map.resources :patients
+  map.resources :patients, :active_scaffold => true
 
   # The priority is based upon order of creation: first created -> highest priority.
 
