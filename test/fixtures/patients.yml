@@ -1,0 +1,7 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date_of_birdth: 2009-05-05
+
+two:
+  date_of_birdth: 2009-05-05

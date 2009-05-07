@@ -1,0 +1,2 @@
+class DoctoralConclusionsController < ApplicationController
+end
