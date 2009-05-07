@@ -1,13 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :doctoral_conclusions, :active_scaffold => true
+
   map.resources :metadatas
 
-  map.resources :doctoral_conclusions
-
-  map.resources :personal_datas
-
-  map.resources :visits
-
   map.resources :patients, :active_scaffold => true
+
+  map.resources :personal_datas, :active_scaffold => true
+
+  map.resources :visits, :active_scaffold => true
 
   # The priority is based upon order of creation: first created -> highest priority.
 
