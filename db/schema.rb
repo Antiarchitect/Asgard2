@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090509024324) do
+ActiveRecord::Schema.define(:version => 20090512015018) do
 
   create_table "doctoral_conclusions", :force => true do |t|
     t.string   "doctor_speciality"
@@ -20,10 +20,11 @@ ActiveRecord::Schema.define(:version => 20090509024324) do
   end
 
   create_table "metadatas", :force => true do |t|
+    t.string   "model"
     t.string   "name_in_model"
     t.string   "name_in_view"
     t.text     "description"
-    t.string   "unit"
+    t.string   "locale"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
