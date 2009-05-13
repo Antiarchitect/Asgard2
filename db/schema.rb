@@ -37,8 +37,8 @@ ActiveRecord::Schema.define(:version => 20090512015018) do
 
   create_table "personal_datas", :force => true do |t|
     t.string   "first_name"
+    t.string   "middle_name"
     t.string   "last_name"
-    t.string   "family_name"
     t.boolean  "gender"
     t.integer  "passport_seria"
     t.integer  "passport_number"
