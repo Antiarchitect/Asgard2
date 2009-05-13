@@ -4,12 +4,27 @@ class Patient < ActiveRecord::Base
            :order => 'created_at DESC'
   has_many :visits
 
-  @name = PersonalData.find(:first)
-
-
   def name
-    unless @name.nil?
-      "#{@name.last_name} #{@name.first_name} #{@name.middle_name}"
+    @names = self.personal_datas.find(:first, :order => 'created_at DESC')
+    if @names.blank?
+      return 'Нет сведений о пациенте'
+    else
+      full_name = ""
+      if !@names.last_name.blank?
+        full_name = full_name + @names.last_name
+      end
+      if !@names.first_name.blank?
+        full_name = full_name + ' ' + @names.first_name
+      end
+      if !@names.middle_name.blank?
+        full_name = full_name + ' ' + @names.middle_name
+      end
+      if full_name.blank?
+        return 'Нет сведений о ФИО пациента'
+      else
+        full_name
+      end
+      
     end
   end
 
