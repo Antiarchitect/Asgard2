@@ -7,6 +7,7 @@ class PatientsController < ApplicationController
         config.columns[meta.name_in_model].description = meta.description
       end
     end
+    config.nested.add_link('Персональные данные', [:personal_datas])
     config.label = 'Пациент'
     config.list.columns = [:id, :date_of_birdth]
     config.list.sorting = {:id => 'ASC'}
