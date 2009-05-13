@@ -20,7 +20,7 @@
       :download => 'Загрузить',
       :edit => 'Редактировать',
       :export => 'Экспорт',
-      :nested_for_model => '{{nested_model}} <- {{parent_model}}',
+      :nested_for_model => '{{nested_model}} {{parent_model}}',
       :filtered => '(Найденное)',
       :found => 'Найдено',
       :hide => 'Скрыть',

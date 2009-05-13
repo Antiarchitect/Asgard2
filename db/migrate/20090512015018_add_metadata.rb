@@ -17,6 +17,13 @@ class AddMetadata < ActiveRecord::Migration
       :description => 'Номер карты пациента',
       :locale => 'ru'
     )
+    Metadata.create(
+      :model => 'patients' ,
+      :name_in_model => 'name',
+      :name_in_view => 'ФИО',
+      :description => 'Фамилия, Имя и Отчество пациента',
+      :locale => 'ru'
+    )
     
     # for personal_datas
     Metadata.create(
@@ -115,15 +122,15 @@ class AddMetadata < ActiveRecord::Migration
 		Metadata.create(
       :model => 'doctoral_conclusions' ,
       :name_in_model => 'doctor_speciality',
-      :name_in_view => 'Телефон',
-      :description => 'Номер телефона пациента',
+      :name_in_view => 'Специальность',
+      :description => 'Специальность врача',
       :locale => 'ru'
     )
 		Metadata.create(
       :model => 'doctoral_conclusions' ,
       :name_in_model => 'conclusion',
-      :name_in_view => '',
-      :description => 'Номер мобильного телефона пациента',
+      :name_in_view => 'Заключение',
+      :description => 'Заключение врача',
       :locale => 'ru'
     )
 
