@@ -7,9 +7,12 @@ class VisitsController < ApplicationController
         config.columns[meta.name_in_model].description = meta.description
       end
     end
+    config.create.columns = [:start_date, :end_date, :epicrysis]
     config.label = 'Посещения'
     config.list.columns = [:start_date, :end_date, :epicrysis]
     config.list.sorting = {:start_date => 'DESC'}
     config.nested.add_link('Данные по визиту', [:personal_datas, :doctoral_conclusions, :objective_datas, :laboratory_blood_tests])
+    config.show.columns = [:start_date, :end_date, :epicrysis]
+    config.update.columns = [:start_date, :end_date, :epicrysis]
   end
 end

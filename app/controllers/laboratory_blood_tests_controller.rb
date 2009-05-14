@@ -1,7 +1,8 @@
 class LaboratoryBloodTestsController < ApplicationController
   active_scaffold :laboratory_blood_test do |config|
-    config.list.columns = []
     config.create.columns = []
+    config.list.columns = []
+    config.show.columns = []
     config.update.columns = []
     @metadata = Metadata.find(:all, :conditions => ["model='laboratory_blood_tests'", "locale='ru'"])
     @metadata.each do |meta|
@@ -13,8 +14,9 @@ class LaboratoryBloodTestsController < ApplicationController
         else
           config.columns[meta.name_in_model].description = meta.description + ' (' + meta.unit + ')'
         end
-        config.list.columns << meta.name_in_model
         config.create.columns << meta.name_in_model
+        config.list.columns << meta.name_in_model
+        config.show.columns << meta.name_in_model
         config.update.columns << meta.name_in_model
       end
     end
