@@ -4,7 +4,8 @@ class CreateMetadatas < ActiveRecord::Migration
       t.string :model
       t.string :name_in_model
       t.string :name_in_view
-      t.text :description
+      t.string :description
+      t.string :unit
       t.string :locale
       
       t.timestamps

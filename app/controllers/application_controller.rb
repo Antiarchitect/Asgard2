@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
     config.actions.exclude :search
     config.actions.add :live_search
     config.ignore_columns.add [:created_at, :updated_at, :lock_version]
-    config.list.per_page = 10
+    config.list.per_page = 25
     config.theme = :blue
   end
   # Scrub sensitive parameters from your log

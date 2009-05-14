@@ -1,7 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :analyses, :active_scaffold => true
+
   map.resources :doctoral_conclusions, :active_scaffold => true
 
-  map.resources :metadatas
+  map.resources :metadatas, :active_scaffold => true
 
   map.resources :patients, :active_scaffold => true
 
