@@ -13,7 +13,7 @@ ActiveRecord::Schema.define(:version => 20090514002743) do
 
   create_table "analyses", :force => true do |t|
     t.string   "type"
-    t.integer  "patient_id"
+    t.integer  "visit_id"
     t.integer  "param1",     :limit => 10, :precision => 10, :scale => 0
     t.integer  "param2",     :limit => 10, :precision => 10, :scale => 0
     t.integer  "param3",     :limit => 10, :precision => 10, :scale => 0
@@ -69,11 +69,11 @@ ActiveRecord::Schema.define(:version => 20090514002743) do
   end
 
   create_table "doctoral_conclusions", :force => true do |t|
+    t.integer  "visit_id"
     t.string   "doctor_speciality"
     t.text     "conclusion"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "patient_id"
   end
 
   create_table "metadatas", :force => true do |t|
@@ -94,6 +94,7 @@ ActiveRecord::Schema.define(:version => 20090514002743) do
   end
 
   create_table "personal_datas", :force => true do |t|
+    t.integer  "visit_id"
     t.string   "first_name"
     t.string   "middle_name"
     t.string   "last_name"
@@ -104,19 +105,18 @@ ActiveRecord::Schema.define(:version => 20090514002743) do
     t.integer  "policy_number"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "patient_id"
     t.string   "address"
     t.string   "phone_number"
     t.string   "mobile_phone_number"
   end
 
   create_table "visits", :force => true do |t|
+    t.integer  "patient_id"
     t.date     "start_date"
     t.date     "end_date"
     t.text     "epicrysis"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "patient_id"
   end
 
 end

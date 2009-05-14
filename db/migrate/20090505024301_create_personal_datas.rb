@@ -1,6 +1,7 @@
 class CreatePersonalDatas < ActiveRecord::Migration
   def self.up
     create_table :personal_datas do |t|
+      t.integer :visit_id
       t.string :first_name
       t.string :middle_name
       t.string :last_name

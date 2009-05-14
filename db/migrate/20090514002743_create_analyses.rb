@@ -2,7 +2,7 @@ class CreateAnalyses < ActiveRecord::Migration
   def self.up
     create_table :analyses do |t|
       t.string :type
-      t.integer :patient_id
+      t.integer :visit_id
       t.decimal :param1
       t.decimal :param2
       t.decimal :param3

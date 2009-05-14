@@ -1,6 +1,7 @@
 class CreateVisits < ActiveRecord::Migration
   def self.up
     create_table :visits do |t|
+      t.integer :patient_id
       t.date :start_date
       t.date :end_date
       t.text :epicrysis
