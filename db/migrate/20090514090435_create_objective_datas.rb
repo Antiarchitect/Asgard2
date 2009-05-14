@@ -1,6 +1,6 @@
-class CreateObjecitveDatas < ActiveRecord::Migration
+class CreateObjectiveDatas < ActiveRecord::Migration
   def self.up
-    create_table :objecitve_datas do |t|
+    create_table :objective_datas do |t|
       t.integer :visit_id
       t.float :param1
       t.float :param2
@@ -52,13 +52,12 @@ class CreateObjecitveDatas < ActiveRecord::Migration
       t.float :param48
       t.float :param49
       t.float :param50
-
-
+      
       t.timestamps
     end
   end
 
   def self.down
-    drop_table :objecitve_datas
+    drop_table :objective_datas
   end
 end
