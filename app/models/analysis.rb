@@ -1,9 +1,9 @@
 class Analysis < ActiveRecord::Base
-  belongs_to :visit
+  
 end
 
 class Analysis1 < Analysis
-  
+  belongs_to :visit
 end
 
 class Analysis2 < Analysis
