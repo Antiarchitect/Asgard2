@@ -1,2 +1,0 @@
-class LaboratoryBloodAnalysesController < ApplicationController
-end

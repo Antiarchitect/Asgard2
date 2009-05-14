@@ -355,13 +355,13 @@ class AddMetadata < ActiveRecord::Migration
     )
 
 
-#for laboratory_blood_analyses
+#for laboratory_blood_tests
 #
 #
 #
 ############################################################################
     Metadata.create(
-      :model => 'laboratory_blood_analyses' ,
+      :model => 'laboratory_blood_tests' ,
       :name_in_model => 'param1',
       :name_in_view => 'Эритроц.',
       :description => 'Эритроциты',
@@ -369,7 +369,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_analyses' ,
+      :model => 'laboratory_blood_tests' ,
       :name_in_model => 'param2',
       :name_in_view => 'Hb',
       :description => 'Гемоглобин',
@@ -377,14 +377,221 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_analyses' ,
+      :model => 'laboratory_blood_tests' ,
       :name_in_model => 'param3',
       :name_in_view => 'Цвет.п.',
       :description => 'Цветной показатель',
       :unit => '',
       :locale => 'ru'
     )
-
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param4',
+      :name_in_view => 'Ретикул.',
+      :description => 'Ретикулоциты',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param5',
+      :name_in_view => 'Лейкоц.',
+      :description => 'Лейкоциты',
+      :unit => 'x(10^9)/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param6',
+      :name_in_view => 'П/я',
+      :description => 'Палочкоядерные клетки',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param7',
+      :name_in_view => 'С/я',
+      :description => 'Сегментоядерные клетки',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param8',
+      :name_in_view => 'Эоз.',
+      :description => 'Эозинофилы',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param9',
+      :name_in_view => 'Баз.',
+      :description => 'Базофилы',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param10',
+      :name_in_view => 'Мон.',
+      :description => 'Моноциты',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param11',
+      :name_in_view => 'Лим.',
+      :description => 'Лимфоциты',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param12',
+      :name_in_view => 'Тромб.',
+      :description => 'Тромбоциты',
+      :unit => 'x(10^9)/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param13',
+      :name_in_view => 'СОЭ',
+      :description => 'Скорость оседания эритроцитов',
+      :unit => 'мм/час',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param14',
+      :name_in_view => 'Глюкоза',
+      :description => 'Глюкоза',
+      :unit => 'ммоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param15',
+      :name_in_view => 'О. белок',
+      :description => 'Общий белок',
+      :unit => 'г/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param16',
+      :name_in_view => 'Мочевина',
+      :description => 'Мочевина крови',
+      :unit => 'мкмоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param17',
+      :name_in_view => 'Креатин.',
+      :description => 'Креатинин',
+      :unit => 'мкмоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param18',
+      :name_in_view => 'Бил.общ.',
+      :description => 'Билирубин общий',
+      :unit => 'мкмоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param19',
+      :name_in_view => 'Бил.пр.',
+      :description => 'Билирубин прямой',
+      :unit => 'мкмоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param20',
+      :name_in_view => 'Бил.непр.',
+      :description => 'Билирубин непрямой',
+      :unit => 'мкмоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param21',
+      :name_in_view => 'Фибрин',
+      :description => 'Фибриноген',
+      :unit => 'г/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param22',
+      :name_in_view => 'ПТИ',
+      :description => 'Протромбиновый индекс',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param23',
+      :name_in_view => 'Холест.',
+      :description => 'Холестерин',
+      :unit => 'ммоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param24',
+      :name_in_view => 'Тим.пр.',
+      :description => 'Тимоловая проба',
+      :unit => 'ед.S-H.',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param25',
+      :name_in_view => 'Сулем.пр.',
+      :description => 'Сулемовая проба',
+      :unit => 'ед. Сулемы',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param26',
+      :name_in_view => 'АЛАТ',
+      :description => 'Аланиаминотрансфераза',
+      :unit => 'МЕ/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param27',
+      :name_in_view => 'АСАТ',
+      :description => 'Аспартатаминотрансфераза',
+      :unit => 'МЕ/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param28',
+      :name_in_view => 'СРБ',
+      :description => '"С" реактивный белок',
+      :unit => '1 - положительный, 2 - отрицательный',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_tests' ,
+      :name_in_model => 'param29',
+      :name_in_view => 'Серомук',
+      :description => 'Серомукоид',
+      :unit => 'усл. ед.',
+      :locale => 'ru'
+    )
   end
 
   def self.down

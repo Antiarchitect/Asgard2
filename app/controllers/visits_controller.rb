@@ -10,6 +10,6 @@ class VisitsController < ApplicationController
     config.label = 'Посещения'
     config.list.columns = [:start_date, :end_date, :epicrysis]
     config.list.sorting = {:start_date => 'DESC'}
-    config.nested.add_link('Данные по визиту', [:personal_datas, :doctoral_conclusions, :objective_datas])
+    config.nested.add_link('Данные по визиту', [:personal_datas, :doctoral_conclusions, :objective_datas, :laboratory_blood_tests])
   end
 end

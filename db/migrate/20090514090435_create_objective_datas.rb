@@ -53,6 +53,7 @@ class CreateObjectiveDatas < ActiveRecord::Migration
       t.float :param49
       t.float :param50
       
+      
       t.timestamps
     end
   end

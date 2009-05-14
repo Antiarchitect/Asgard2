@@ -1,9 +1,9 @@
-class ObjectiveDatasController < ApplicationController
-  active_scaffold :objective_data do |config|
+class LaboratoryBloodTestsController < ApplicationController
+  active_scaffold :laboratory_blood_test do |config|
     config.list.columns = []
     config.create.columns = []
     config.update.columns = []
-    @metadata = Metadata.find(:all, :conditions => ["model='objective_datas'", "locale='ru'"])
+    @metadata = Metadata.find(:all, :conditions => ["model='laboratory_blood_tests'", "locale='ru'"])
     @metadata.each do |meta|
       unless config.columns[meta.name_in_model].nil?
         config.columns[meta.name_in_model].label = meta.name_in_view
@@ -18,6 +18,6 @@ class ObjectiveDatasController < ApplicationController
         config.update.columns << meta.name_in_model
       end
     end
-    config.label = 'Объективные данные пациента'
+    config.label = 'Лабораторное исследование крови'
   end
 end

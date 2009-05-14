@@ -1,6 +1,6 @@
-class CreateLaboratoryBloodAnalyses < ActiveRecord::Migration
+class CreateLaboratoryBloodTests < ActiveRecord::Migration
   def self.up
-    create_table :laboratory_blood_analyses do |t|
+    create_table :laboratory_blood_tests do |t|
       t.integer :visit_id
       t.float :param1
       t.float :param2
@@ -59,6 +59,6 @@ class CreateLaboratoryBloodAnalyses < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :laboratory_blood_analyses
+    drop_table :laboratory_blood_tests
   end
 end
