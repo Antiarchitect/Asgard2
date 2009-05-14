@@ -1,8 +1,13 @@
 class AddMetadata < ActiveRecord::Migration
   def self.up
     Metadata.delete_all
+    
 
-    # for patients
+# for patients
+#
+#
+#
+############################################################################
     Metadata.create(
       :model => 'patients' ,
       :name_in_model => 'date_of_birdth',
@@ -24,8 +29,13 @@ class AddMetadata < ActiveRecord::Migration
       :description => 'Фамилия, Имя и Отчество пациента',
       :locale => 'ru'
     )
+
     
-    # for personal_datas
+# for personal_datas
+#
+#
+#
+############################################################################
     Metadata.create(
       :model => 'personal_datas' ,
       :name_in_model => 'first_name',
@@ -47,13 +57,7 @@ class AddMetadata < ActiveRecord::Migration
       :description => 'Фамилия пациента',
       :locale => 'ru'
     )
-#    Metadata.create(
-#      :model => 'personal_datas' ,
-#      :name_in_model => 'name',
-#      :name_in_view => 'ФИО',
-#      :description => 'Фамилия, Имя и Отчество пациента',
-#      :locale => 'ru'
-#    )
+
 		Metadata.create(
       :model => 'personal_datas' ,
       :name_in_model => 'gender',
@@ -118,7 +122,12 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
 
-		# for doctoral_conclusions
+
+# for doctoral_conclusions
+#
+#
+#
+############################################################################
 		Metadata.create(
       :model => 'doctoral_conclusions' ,
       :name_in_model => 'doctor_speciality',
@@ -134,7 +143,12 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
 
-		# for visits
+
+# for visits
+#
+#
+#
+############################################################################
 		Metadata.create(
       :model => 'visits' ,
       :name_in_model => 'start_date',
@@ -157,7 +171,12 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
 
-    #for objective_datas
+
+#for objective_datas
+#
+#
+#
+############################################################################
     Metadata.create(
       :model => 'objective_datas' ,
       :name_in_model => 'param1',
@@ -291,7 +310,7 @@ class AddMetadata < ActiveRecord::Migration
       :name_in_model => 'param17',
       :name_in_view => 'Возр. кур.',
       :description => 'С какого возраста начал курить',
-      :unit => '',
+#      :unit => 'лет',
       :locale => 'ru'
     )
     Metadata.create(
@@ -334,6 +353,38 @@ class AddMetadata < ActiveRecord::Migration
       :unit => 'рублей',
       :locale => 'ru'
     )
+
+
+#for laboratory_blood_analyses
+#
+#
+#
+############################################################################
+    Metadata.create(
+      :model => 'laboratory_blood_analyses' ,
+      :name_in_model => 'param1',
+      :name_in_view => 'Эритроц.',
+      :description => 'Эритроциты',
+      :unit => 'x(10^12)/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_analyses' ,
+      :name_in_model => 'param2',
+      :name_in_view => 'Hb',
+      :description => 'Гемоглобин',
+      :unit => 'г/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'laboratory_blood_analyses' ,
+      :name_in_model => 'param3',
+      :name_in_view => 'Цвет.п.',
+      :description => 'Цветной показатель',
+      :unit => '',
+      :locale => 'ru'
+    )
+
   end
 
   def self.down

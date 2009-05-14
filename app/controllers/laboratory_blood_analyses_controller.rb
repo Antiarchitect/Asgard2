@@ -1,0 +1,2 @@
+class LaboratoryBloodAnalysesController < ApplicationController
+end

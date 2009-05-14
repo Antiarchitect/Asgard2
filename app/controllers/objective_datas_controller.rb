@@ -6,6 +6,11 @@ class ObjectiveDatasController < ApplicationController
       unless config.columns[meta.name_in_model].nil?
         config.columns[meta.name_in_model].label = meta.name_in_view
         config.columns[meta.name_in_model].description = meta.description
+        if meta.unit.blank?
+          config.columns[meta.name_in_model].description = meta.description
+        else
+          config.columns[meta.name_in_model].description = meta.description + ' (' + meta.unit + ')'
+        end
         config.list.columns << meta.name_in_model
       end
     end

@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :laboratory_blood_analyses
+
   map.resources :objective_datas
 
   map.resources :analyses, :active_scaffold => true
