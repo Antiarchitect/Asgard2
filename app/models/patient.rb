@@ -9,7 +9,7 @@ class Patient < ActiveRecord::Base
     if @visit.blank?
       return 'Для данного пациента нет зарегистрированных посещений'
     else
-      @names = @visit.personal_data
+      @names = @visit.personal_datas.find(:first, :order => 'created_at DESC')
       if @names.blank?
         return 'Нет сведений о пациенте'
       else
