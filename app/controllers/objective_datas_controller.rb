@@ -1,5 +1,6 @@
 class ObjectiveDatasController < ApplicationController
   active_scaffold :objective_data do |config|
+    config.actions.exclude :live_search
     config.create.columns = []
     config.list.columns = []
     config.show.columns = []

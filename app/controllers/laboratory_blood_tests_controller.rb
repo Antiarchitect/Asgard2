@@ -1,5 +1,6 @@
 class LaboratoryBloodTestsController < ApplicationController
   active_scaffold :laboratory_blood_test do |config|
+    config.actions.exclude :live_search
     config.create.columns = []
     config.list.columns = []
     config.show.columns = []

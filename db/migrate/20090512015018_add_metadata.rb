@@ -29,6 +29,20 @@ class AddMetadata < ActiveRecord::Migration
       :description => 'Фамилия, Имя и Отчество пациента',
       :locale => 'ru'
     )
+    Metadata.create(
+      :model => 'patients' ,
+      :name_in_model => 'passport',
+      :name_in_view => 'Паспорт',
+      :description => 'Серия и номер паспорта пациента',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'patients' ,
+      :name_in_model => 'policy',
+      :name_in_view => 'Полис',
+      :description => 'Серия и номер полиса медицинского страхования',
+      :locale => 'ru'
+    )
 
     
 # for personal_datas
