@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :objecitve_datas
+
   map.resources :analyses, :active_scaffold => true
 
   map.resources :doctoral_conclusions, :active_scaffold => true

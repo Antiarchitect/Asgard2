@@ -1,7 +1,6 @@
-class CreateAnalyses < ActiveRecord::Migration
+class CreateObjecitveDatas < ActiveRecord::Migration
   def self.up
-    create_table :analyses do |t|
-      t.string :type
+    create_table :objecitve_datas do |t|
       t.integer :visit_id
       t.float :param1
       t.float :param2
@@ -60,6 +59,6 @@ class CreateAnalyses < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :analyses
+    drop_table :objecitve_datas
   end
 end

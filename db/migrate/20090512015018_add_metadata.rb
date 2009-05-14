@@ -157,10 +157,9 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
 
-    #for analyses
-    #for Analyses1
+    #for objective_datas
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param1',
       :name_in_view => 'Возраст',
       :description => 'Возраст пациента',
@@ -168,7 +167,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param2',
       :name_in_view => 'Рост',
       :description => 'Рост пациента',
@@ -176,7 +175,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param3',
       :name_in_view => 'Вес',
       :description => 'Вес пациента',
@@ -184,7 +183,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param4',
       :name_in_view => 'Окр. гр. кл.',
       :description => 'Окружность грудной клетки',
@@ -192,7 +191,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param5',
       :name_in_view => 'Темпер.',
       :description => 'Температура тела',
@@ -200,7 +199,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param6',
       :name_in_view => 'АД сист.',
       :description => 'Артериальное давление систолическое',
@@ -208,7 +207,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param7',
       :name_in_view => 'АД диаст.',
       :description => 'Артериальное давление диастолическое',
@@ -216,7 +215,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param8',
       :name_in_view => 'ЧСС',
       :description => 'Частота сердечных сокращений в минуту',
@@ -224,7 +223,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param9',
       :name_in_view => 'ЧД',
       :description => 'Частота дыхания в минуту',
@@ -232,7 +231,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param10',
       :name_in_view => 'Профстаж',
       :description => 'Стаж профессиональный',
@@ -240,7 +239,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param11',
       :name_in_view => 'Стаж общ.',
       :description => 'Стаж общий',
@@ -248,7 +247,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param12',
       :name_in_view => 'КСН',
       :description => 'Количество случаев нетрудоспособности',
@@ -256,7 +255,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param13',
       :name_in_view => 'КДН',
       :description => 'Количество дней нетрудоспособности',
@@ -264,7 +263,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param14',
       :name_in_view => 'Длит. заб.',
       :description => 'Длительность заболевания',
@@ -272,7 +271,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param15',
       :name_in_view => 'Лет в дм',
       :description => 'Продолжительность жизни в данной местности',
@@ -280,7 +279,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param16',
       :name_in_view => 'Стаж кур.',
       :description => 'Стаж курения',
@@ -288,7 +287,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param17',
       :name_in_view => 'Возр. кур.',
       :description => 'С какого возраста начал курить',
@@ -296,7 +295,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param18',
       :name_in_view => 'Числ. сиг.',
       :description => 'Количество выкуриваемых сигарет в день',
@@ -304,7 +303,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param19',
       :name_in_view => 'ИК',
       :description => 'Индекс курильщика',
@@ -312,7 +311,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param20',
       :name_in_view => 'ИК п/лет',
       :description => 'Индекс курильщика "пачка/лет"',
@@ -320,7 +319,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param21',
       :name_in_view => 'Дл. воз. от к.',
       :description => 'Длительность воздержания от курения',
@@ -328,7 +327,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'Analysis1' ,
+      :model => 'objective_datas' ,
       :name_in_model => 'param22',
       :name_in_view => 'Руб/мес',
       :description => 'Количество денег, затрачиваемых в месяц на сигареты',

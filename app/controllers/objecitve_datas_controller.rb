@@ -1,0 +1,2 @@
+class ObjecitveDatasController < ApplicationController
+end
