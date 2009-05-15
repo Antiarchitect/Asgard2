@@ -19,66 +19,93 @@ class Patient < ActiveRecord::Base
     end
   end
 
-
-  def name
+  def first_name
     if !error.blank?
       return error
     else
-      full_name = ""
-      if !@personal_datas.last_name.blank?
-        full_name = full_name + @personal_datas.last_name
-      end
-      if !@personal_datas.first_name.blank?
-        full_name = full_name + ' ' + @personal_datas.first_name
-      end
-      if !@personal_datas.middle_name.blank?
-        full_name = full_name + ' ' + @personal_datas.middle_name
-      end
-      if full_name.blank?
-        return 'Нет сведений о ФИО пациента'
+      if @personal_datas.first_name.blank?
+        ''
       else
-        full_name
+        @personal_datas.first_name.to_s
       end
     end
   end
 
-  def passport
+  def last_name
     if !error.blank?
-      return ''
     else
-      passport = ""
-      if !@personal_datas.passport_seria.blank?
-        passport = passport + @personal_datas.passport_seria
-      end
-      if !@personal_datas.passport_number.blank?
-        passport = passport + @personal_datas.passport_number
-      end
-      if passport.blank?
-        return 'Нет сведений о паспорте пациента'
+      if @personal_datas.last_name.blank?
+        ''
       else
-        passport
+        @personal_datas.last_name.to_s
       end
     end
   end
 
-  def policy
+  def middle_name
     if !error.blank?
-      return ''
+      
     else
-      policy = ""
-      if !@personal_datas.policy_seria.blank?
-        policy = policy + @personal_datas.policy_seria
-      end
-      if !@personal_datas.policy_number.blank?
-        policy = policy + @personal_datas.policy_number
-      end
-      if policy.blank?
-        return 'Нет сведений о паспорте пациента'
+      if @personal_datas.middle_name.blank?
+        ''
       else
-        policy
+        @personal_datas.middle_name.to_s
       end
     end
   end
+
+  def passport_seria
+    if !error.blank?
+      
+    else
+      if @personal_datas.passport_seria.blank?
+        ''
+      else
+        @personal_datas.passport_seria.to_s
+      end
+    end
+  end
+
+  def passport_number
+    if !error.blank?
+      
+    else
+      if @personal_datas.passport_number.blank?
+        ''
+      else
+        @personal_datas.passport_number.to_s
+      end
+    end
+  end
+
+  def policy_seria
+    if !error.blank?
+      
+    else
+      if @personal_datas.policy_seria.blank?
+        ''
+      else
+        @personal_datas.policy_seria.to_s
+      end
+    end
+  end
+
+  def policy_number
+    if !error.blank?
+      
+    else
+      if @personal_datas.policy_number.blank?
+        ''
+      else
+        @personal_datas.policy_number.to_s
+      end
+    end
+  end
+
+
+
+  
+
 
   def to_label
     'пациента'

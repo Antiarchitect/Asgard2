@@ -24,23 +24,51 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model => 'patients' ,
-      :name_in_model => 'name',
-      :name_in_view => 'ФИО',
-      :description => 'Фамилия, Имя и Отчество пациента',
+      :name_in_model => 'last_name',
+      :name_in_view => 'Фамилия',
+      :description => 'Фамилия пациента',
       :locale => 'ru'
     )
     Metadata.create(
       :model => 'patients' ,
-      :name_in_model => 'passport',
-      :name_in_view => 'Паспорт',
-      :description => 'Серия и номер паспорта пациента',
+      :name_in_model => 'first_name',
+      :name_in_view => 'Имя',
+      :description => 'Имя пациента',
       :locale => 'ru'
     )
     Metadata.create(
       :model => 'patients' ,
-      :name_in_model => 'policy',
-      :name_in_view => 'Полис',
-      :description => 'Серия и номер полиса медицинского страхования',
+      :name_in_model => 'middle_name',
+      :name_in_view => 'Отчество',
+      :description => 'Отчество пациента',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'patients' ,
+      :name_in_model => 'passport_seria',
+      :name_in_view => 'Серия паспорта',
+      :description => 'Серия паспорта пациента',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'patients' ,
+      :name_in_model => 'passport_number',
+      :name_in_view => 'Номер паспорта',
+      :description => 'Номер паспорта пациента',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'patients' ,
+      :name_in_model => 'policy_seria',
+      :name_in_view => 'Серия полиса',
+      :description => 'Серия полиса медицинского страхования',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'patients' ,
+      :name_in_model => 'policy_number',
+      :name_in_view => 'Номер полиса',
+      :description => 'Номер полиса медицинского страхования',
       :locale => 'ru'
     )
 
