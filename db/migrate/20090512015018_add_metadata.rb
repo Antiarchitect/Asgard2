@@ -797,6 +797,205 @@ class AddMetadata < ActiveRecord::Migration
       :unit => '%',
       :locale => 'ru'
     )
+
+
+# for endoscopic_tests
+#
+#
+#
+############################################################################
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param1',
+      :name_in_view => 'Гематокр.',
+      :description => 'Гематокрит',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param2',
+      :name_in_view => 'Hb в эр.',
+      :description => 'Среднее содержание гемоглобина в 1 эритроците',
+      :unit => 'пг',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param3',
+      :name_in_view => 'Ср. Hb эр.',
+      :description => 'Средняя концентрация гемоглобина в 1 эритроците',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param4',
+      :name_in_view => 'ОксиHb',
+      :description => 'Оксигемоглобин',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param5',
+      :name_in_view => 'МетHb',
+      :description => 'Метгемоглобин',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param6',
+      :name_in_view => 'Об. фос. эр.',
+      :description => 'Общий фосфор эритроцитов',
+      :unit => 'ммоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param7',
+      :name_in_view => 'ДФГ об.',
+      :description => 'Дифосфоглицерат общий',
+      :unit => 'ммоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param8',
+      :name_in_view => 'ДФГ/Н',
+      :description => 'Дифосфоглицерат на 1 грамм гемоглобина',
+      :unit => 'ммоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param9',
+      :name_in_view => 'АТФ общ.',
+      :description => 'АТФ общий',
+      :unit => 'ммоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param10',
+      :name_in_view => 'K в пла',
+      :description => 'Калий плазмы',
+      :unit => 'ммоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param11',
+      :name_in_view => 'Na в пла',
+      :description => 'Натрий плазмы',
+      :unit => 'ммоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param12',
+      :name_in_view => 'K в эр',
+      :description => 'Калий в эритроците',
+      :unit => 'ммоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param13',
+      :name_in_view => 'Na в эр',
+      :description => 'Натрий в эритроците',
+      :unit => 'ммоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param14',
+      :name_in_view => 'Стр. эпит.',
+      :description => 'Строение эпителия',
+      :unit => '1 - норма, -1 - паталогически изменен',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param15',
+      :name_in_view => 'Баз.мемб.',
+      :description => 'Базальная мембрана',
+      :unit => 'мкн',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param16',
+      :name_in_view => 'Инфильтр',
+      :description => 'Инфильтрация',
+      :unit => '1 - норма, -1, выраженная',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param17',
+      :name_in_view => 'Отек',
+      :description => 'Отек',
+      :unit => '1 - норма, -1 = выраженный',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param18',
+      :name_in_view => 'Вол.стр.',
+      :description => 'Волокнистые структуры',
+      :unit => '1 - норма, -1 - паталогия',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param19',
+      :name_in_view => 'Жел.эп.',
+      :description => 'Состояние железистого эпителия',
+      :unit => '1 - норма, -1 - паталогия',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param20',
+      :name_in_view => 'Мыш.эл.',
+      :description => 'Содержание мышечных элементов',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param21',
+      :name_in_view => 'Индекс',
+      :description => 'Индекс морфофункционального содержания мышечных элементов',
+      :unit => '',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param22',
+      :name_in_view => 'КПИ',
+      :description => 'Кариопикнотический индекс',
+      :unit => '',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param23',
+      :name_in_view => 'ИАЭ',
+      :description => 'Индекс активности эндобронхита',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'endoscopic_tests' ,
+      :name_in_model => 'param24',
+      :name_in_view => 'ИВ%',
+      :description => 'Индекс воспаления',
+      :unit => '%',
+      :locale => 'ru'
+    )
   end
 
   def self.down
