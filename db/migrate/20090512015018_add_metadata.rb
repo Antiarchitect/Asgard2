@@ -606,6 +606,197 @@ class AddMetadata < ActiveRecord::Migration
       :unit => 'усл. ед.',
       :locale => 'ru'
     )
+
+
+#for citology_tests
+#
+#
+#
+############################################################################
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param1',
+      :name_in_view => 'pH',
+      :description => 'Активность ионов водорода',
+      :unit => 'кислотность крови',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param2',
+      :name_in_view => 'pO2',
+      :description => 'Парциальное давление кислорода',
+      :unit => 'мм рт.ст.',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param3',
+      :name_in_view => 'pCO2',
+      :description => 'Парциальное давление двуокиси углерода',
+      :unit => 'мм рт.ст.',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param4',
+      :name_in_view => 'Глюкоза',
+      :description => 'Глюкоза крови',
+      :unit => 'ммоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param5',
+      :name_in_view => 'Лактат',
+      :description => 'Лактат крови',
+      :unit => 'ммоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param6',
+      :name_in_view => 'Натрий',
+      :description => 'Натрий крови',
+      :unit => 'ммоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param7',
+      :name_in_view => 'Калий',
+      :description => 'Калий крови',
+      :unit => 'ммоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param8',
+      :name_in_view => 'Кальций',
+      :description => 'Кальций крови',
+      :unit => 'ммоль/л',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param9',
+      :name_in_view => 'Окр. ЭК',
+      :description => 'Округлые эпителиальные клетки',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param10',
+      :name_in_view => 'Б.ЭК',
+      :description => 'Безъядерные эпителиальные клетки',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param11',
+      :name_in_view => 'Атип.ЭК',
+      :description => 'Атипичные эпителиальные клетки',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param12',
+      :name_in_view => 'Неиз.МК',
+      :description => 'Неизмененные мерцательные клетки',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param13',
+      :name_in_view => 'Кл. без р.',
+      :description => 'Клетки, лишенные ресничек',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param14',
+      :name_in_view => 'Бокал.кл.',
+      :description => 'Бокаловидные клетки',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param15',
+      :name_in_view => 'Пром.кл.',
+      :description => 'Промежуточные клетки',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param16',
+      :name_in_view => 'Камб.кл.',
+      :description => 'Камболавидные клетки',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param17',
+      :name_in_view => 'Эозин.',
+      :description => 'Эозинофилы',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param18',
+      :name_in_view => 'Эозин. р.',
+      :description => 'Эозинофилы разрушенные',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param19',
+      :name_in_view => 'Нейтр.',
+      :description => 'Нейтрофилы',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param20',
+      :name_in_view => 'Нейтр. р.',
+      :description => 'Нейтрофилы разрушенные',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param21',
+      :name_in_view => 'Макроф.',
+      :description => 'Макрофаги',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param22',
+      :name_in_view => 'Лимф.',
+      :description => 'Лимфоциты',
+      :unit => '%',
+      :locale => 'ru'
+    )
+    Metadata.create(
+      :model => 'citology_tests' ,
+      :name_in_model => 'param23',
+      :name_in_view => 'Др.клетк.',
+      :description => 'Другие клетки',
+      :unit => '%',
+      :locale => 'ru'
+    )
   end
 
   def self.down

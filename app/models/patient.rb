@@ -1,4 +1,5 @@
 class Patient < ActiveRecord::Base
+  has_many :citology_tests, :through => :visits
   has_many :doctoral_conclusions, :through => :visits
   has_many :laboratory_blood_tests, :through => :visits
   has_many :objective_datas, :through => :visits

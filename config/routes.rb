@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :citology_tests
+
   map.resources :laboratory_blood_tests
 
   map.resources :objective_datas
