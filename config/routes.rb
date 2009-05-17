@@ -1,11 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :endoscopic_tests
+  map.resources :endoscopic_tests, :active_scaffold => true
 
-  map.resources :citology_tests
+  map.resources :citology_tests, :active_scaffold => true
 
-  map.resources :laboratory_blood_tests
+  map.resources :laboratory_blood_tests, :active_scaffold => true
 
-  map.resources :objective_datas
+  map.resources :objective_datas, :active_scaffold => true
 
   map.resources :analyses, :active_scaffold => true
 
