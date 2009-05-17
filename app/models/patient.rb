@@ -8,7 +8,7 @@ class Patient < ActiveRecord::Base
   has_many :visits
 
   def error
-    @visit = self.visits.find(:first, :order => 'created_at DESC')
+    @visit = self.visits.find(:first, :order => 'start_date DESC')
     if @visit.blank?
       'Для данного пациента нет зарегистрированных посещений'
     else
