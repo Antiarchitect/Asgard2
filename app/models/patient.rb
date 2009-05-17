@@ -21,7 +21,6 @@ class Patient < ActiveRecord::Base
 
   def first_name
     if !error.blank?
-      return error
     else
       if @personal_datas.first_name.blank?
         ''
@@ -33,6 +32,7 @@ class Patient < ActiveRecord::Base
 
   def last_name
     if !error.blank?
+      return error
     else
       if @personal_datas.last_name.blank?
         ''

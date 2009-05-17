@@ -3,7 +3,7 @@
 
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
-  protect_from_forgery # See ActionController::RequestForgeryProtection for details
+  protect_from_forgery :only => [:create, :update, :destroy] # See ActionController::RequestForgeryProtection for details
 
   ActiveScaffold.set_defaults do |config|
     config.actions.exclude :search
