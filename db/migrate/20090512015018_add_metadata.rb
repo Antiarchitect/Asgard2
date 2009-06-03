@@ -12,7 +12,7 @@ class AddMetadata < ActiveRecord::Migration
       :model => 'patients' ,
       :name_in_model => 'date_of_birdth',
       :name_in_view => 'Дата рождения',
-      :description => 'Описание даты рождения',
+      :description => 'Дата рождения пациента',
       :locale => 'ru'
     )
     Metadata.create(
