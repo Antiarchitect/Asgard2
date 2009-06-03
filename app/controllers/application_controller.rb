@@ -6,8 +6,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery :only => [:create, :update, :destroy] # See ActionController::RequestForgeryProtection for details
 
   ActiveScaffold.set_defaults do |config|
-    config.actions.exclude :search
-    config.actions.add :live_search
+    config.actions.swap :search, :live_search
     config.ignore_columns.add [:created_at, :updated_at, :lock_version]
     config.list.per_page = 10
     config.theme = :blue
