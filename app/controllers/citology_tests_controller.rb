@@ -5,7 +5,7 @@ class CitologyTestsController < ApplicationController
     config.list.columns = []
     config.show.columns = []
     config.update.columns = []
-    @metadata = Metadata.find(:all, :conditions => ["model='citology_tests'", "locale='ru'"])
+    @metadata = Metadata.find_metadatas('citology_tests', 'ru')
     @metadata.each do |meta|
       unless config.columns[meta.name_in_model].nil?
         config.columns[meta.name_in_model].label = meta.name_in_view

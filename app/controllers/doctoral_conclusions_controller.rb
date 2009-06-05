@@ -1,6 +1,6 @@
 class DoctoralConclusionsController < ApplicationController
   active_scaffold :doctoral_conclusion do |config|
-    @metadata = Metadata.find(:all, :conditions => ["model='doctoral_conclusions'", "locale='ru'"])
+    @metadata = Metadata.find_metadatas('doctoral_conclusions', 'ru')
     @metadata.each do |meta|
       unless config.columns[meta.name_in_model].nil?
         config.columns[meta.name_in_model].label = meta.name_in_view

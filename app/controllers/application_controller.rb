@@ -4,6 +4,8 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery :only => [:create, :update, :destroy] # See ActionController::RequestForgeryProtection for details
+  # Scrub sensitive parameters from your log
+  # filter_parameter_logging :password
 
   ActiveScaffold.set_defaults do |config|
     config.actions.swap :search, :live_search
@@ -11,6 +13,4 @@ class ApplicationController < ActionController::Base
     config.list.per_page = 10
     config.theme = :blue
   end
-  # Scrub sensitive parameters from your log
-  # filter_parameter_logging :password
 end

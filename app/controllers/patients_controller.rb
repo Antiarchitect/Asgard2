@@ -1,7 +1,7 @@
 class PatientsController < ApplicationController
   active_scaffold :patient do |config|
     config.columns =  [:id, :last_name, :first_name, :middle_name, :date_of_birdth, :passport_seria, :passport_number, :policy_seria, :policy_number]
-    @metadata = Metadata.find(:all, :conditions => ["model='patients'", "locale='ru'"])
+    @metadata = Metadata.find_metadatas('patients', 'ru')
     @metadata.each do |meta|
       unless config.columns[meta.name_in_model].nil?
         config.columns[meta.name_in_model].label = meta.name_in_view
@@ -9,7 +9,7 @@ class PatientsController < ApplicationController
       end
     end
     config.create.columns = [:date_of_birdth]
-    config.label = 'Пациент'
+    config.label = 'Пациенты'
     config.list.columns = [:id, :last_name, :first_name, :middle_name, :date_of_birdth, :passport_seria, :passport_number, :policy_seria, :policy_number]
     config.list.sorting = {:id => 'ASC'}
     config.nested.add_link('Список посещений', [:visits])
