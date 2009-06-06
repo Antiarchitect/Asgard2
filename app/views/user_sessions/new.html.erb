@@ -1,16 +1,16 @@
-<% title "New User Session" %>
+<% title "Вход" %>
 
 <% form_for @user_session do |f| %>
   <%= f.error_messages %>
   <p>
-    <%= f.label :username %><br />
+    <%= f.label "Логин:" %><br />
     <%= f.text_field :username %>
   </p>
   <p>
-    <%= f.label :password %><br />
-    <%= f.text_field :password %>
+    <%= f.label "Пароль:" %><br />
+    <%= f.password_field :password %>
   </p>
-  <p><%= f.submit "Submit" %></p>
+  <p><%= f.submit "Войти" %></p>
 <% end %>
 
 
