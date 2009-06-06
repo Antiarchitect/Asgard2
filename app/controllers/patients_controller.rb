@@ -1,4 +1,6 @@
 class PatientsController < ApplicationController
+  before_filter :require_user
+  
   active_scaffold :patient do |config|
     config.columns =  [:id, :last_name, :first_name, :middle_name, :date_of_birdth, :passport_seria, :passport_number, :policy_seria, :policy_number]
     @metadata = Metadata.find_metadatas('patients', 'ru')
