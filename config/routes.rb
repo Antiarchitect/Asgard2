@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :user_sessions
+
+  map.resources :users
+
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
   map.resources :patients, :active_scaffold => true
