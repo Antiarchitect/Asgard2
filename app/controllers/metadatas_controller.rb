@@ -16,13 +16,8 @@ class MetadatasController < ApplicationController
   protected
 
   def before_create_save(record)
-    record.locale ='ru'
-    metadatas = Metadata.find(:all, :conditions => "model_id='#{record.model_id}' AND locale='ru'")
-    names_in_model = []
-    metadatas.each do |meta|
-      names_in_model << (meta.name_in_model).to_i
-    end     
-    last = names_in_model.max
+    record.locale ='ru'         
+    last = Metadata.find_numerical_names_in_model(record.model_id, record.locale).max
     record.name_in_model = last + 1
   end
 
