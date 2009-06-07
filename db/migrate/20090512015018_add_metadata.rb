@@ -9,63 +9,63 @@ class AddMetadata < ActiveRecord::Migration
 #
 ############################################################################
     Metadata.create(
-      :model => 'patients' ,
+      :model_id => 1,
       :name_in_model => 'date_of_birdth',
       :name_in_view => 'Дата рождения',
       :description => 'Дата рождения пациента',
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'patients' ,
+      :model_id => 1,
       :name_in_model => 'id',
       :name_in_view => 'Номер карты',
       :description => 'Номер карты пациента',
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'patients' ,
+      :model_id => 1,
       :name_in_model => 'last_name',
       :name_in_view => 'Фамилия',
       :description => 'Фамилия пациента',
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'patients' ,
+      :model_id => 1,
       :name_in_model => 'first_name',
       :name_in_view => 'Имя',
       :description => 'Имя пациента',
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'patients' ,
+      :model_id => 1,
       :name_in_model => 'middle_name',
       :name_in_view => 'Отчество',
       :description => 'Отчество пациента',
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'patients' ,
+      :model_id => 1,
       :name_in_model => 'passport_seria',
       :name_in_view => 'Серия паспорта',
       :description => 'Серия паспорта пациента',
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'patients' ,
+      :model_id => 1,
       :name_in_model => 'passport_number',
       :name_in_view => 'Номер паспорта',
       :description => 'Номер паспорта пациента',
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'patients' ,
+      :model_id => 1,
       :name_in_model => 'policy_seria',
       :name_in_view => 'Серия полиса',
       :description => 'Серия полиса медицинского страхования',
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'patients' ,
+      :model_id => 1,
       :name_in_model => 'policy_number',
       :name_in_view => 'Номер полиса',
       :description => 'Номер полиса медицинского страхования',
@@ -79,21 +79,21 @@ class AddMetadata < ActiveRecord::Migration
 #
 ############################################################################
     Metadata.create(
-      :model => 'personal_datas' ,
+      :model_id => 2,
       :name_in_model => 'first_name',
       :name_in_view => 'Имя',
       :description => 'Имя пациента',
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'personal_datas' ,
+      :model_id => 2,
       :name_in_model => 'middle_name',
       :name_in_view => 'Отчество',
       :description => 'Отчество пациента',
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'personal_datas' ,
+      :model_id => 2,
       :name_in_model => 'last_name',
       :name_in_view => 'Фамилия',
       :description => 'Фамилия пациента',
@@ -101,63 +101,63 @@ class AddMetadata < ActiveRecord::Migration
     )
 
 		Metadata.create(
-      :model => 'personal_datas' ,
+      :model_id => 2,
       :name_in_model => 'gender',
       :name_in_view => 'Пол',
       :description => 'Пол пациента (Мужской/Женский)',
       :locale => 'ru'
     )
 		Metadata.create(
-      :model => 'personal_datas' ,
+      :model_id => 2,
       :name_in_model => 'passport_seria',
       :name_in_view => 'Серия паспорта',
       :description => 'Серия паспорта гражданина Российской Федерации',
       :locale => 'ru'
     )
 		Metadata.create(
-      :model => 'personal_datas' ,
+      :model_id => 2,
       :name_in_model => 'passport_number',
       :name_in_view => 'Номер паспорта',
       :description => 'Номер паспорта гражданина Российской Федерации',
       :locale => 'ru'
     )
 		Metadata.create(
-      :model => 'personal_datas' ,
+      :model_id => 2,
       :name_in_model => 'policy_seria',
       :name_in_view => 'Серия полиса',
       :description => 'Серия полиса медицинского страхования',
       :locale => 'ru'
     )
 		Metadata.create(
-      :model => 'personal_datas' ,
+      :model_id => 2,
       :name_in_model => 'policy_number',
       :name_in_view => 'Номер полиса',
       :description => 'Номер полиса медицинского страхования',
       :locale => 'ru'
     )
 		Metadata.create(
-      :model => 'personal_datas' ,
+      :model_id => 2,
       :name_in_model => 'name',
       :name_in_view => 'ФИО',
       :description => 'Фамилия, Имя и Отчество пациента',
       :locale => 'ru'
     )
 		Metadata.create(
-      :model => 'personal_datas' ,
+      :model_id => 2,
       :name_in_model => 'address',
       :name_in_view => 'Адрес',
       :description => 'Адрес проживания пациента',
       :locale => 'ru'
     )
 		Metadata.create(
-      :model => 'personal_datas' ,
+      :model_id => 2,
       :name_in_model => 'phone_number',
       :name_in_view => 'Телефон',
       :description => 'Номер телефона пациента',
       :locale => 'ru'
     )
 		Metadata.create(
-      :model => 'personal_datas' ,
+      :model_id => 2,
       :name_in_model => 'mobile_phone_number',
       :name_in_view => 'Моб. телефон',
       :description => 'Номер мобильного телефона пациента',
@@ -171,14 +171,14 @@ class AddMetadata < ActiveRecord::Migration
 #
 ############################################################################
 		Metadata.create(
-      :model => 'doctoral_conclusions' ,
+      :model_id => 3,
       :name_in_model => 'doctor_speciality',
       :name_in_view => 'Специальность',
       :description => 'Специальность врача',
       :locale => 'ru'
     )
 		Metadata.create(
-      :model => 'doctoral_conclusions' ,
+      :model_id => 3,
       :name_in_model => 'conclusion',
       :name_in_view => 'Заключение',
       :description => 'Заключение врача',
@@ -192,21 +192,21 @@ class AddMetadata < ActiveRecord::Migration
 #
 ############################################################################
 		Metadata.create(
-      :model => 'visits' ,
+      :model_id => 4,
       :name_in_model => 'start_date',
       :name_in_view => 'Дата поступления',
       :description => 'Дата поступления пациента для диспансерного обследования',
       :locale => 'ru'
     )
 		Metadata.create(
-      :model => 'visits' ,
+      :model_id => 4,
       :name_in_model => 'end_date',
       :name_in_view => 'Дата выписки',
       :description => 'Дата выписки пациента',
       :locale => 'ru'
     )
 		Metadata.create(
-      :model => 'visits' ,
+      :model_id => 4,
       :name_in_model => 'epicrysis',
       :name_in_view => 'Эпикриз',
       :description => 'Выписной эпикриз',
@@ -220,7 +220,7 @@ class AddMetadata < ActiveRecord::Migration
 #
 ############################################################################
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param1',
       :name_in_view => 'Возраст',
       :description => 'Возраст пациента',
@@ -228,7 +228,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param2',
       :name_in_view => 'Рост',
       :description => 'Рост пациента',
@@ -236,7 +236,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param3',
       :name_in_view => 'Вес',
       :description => 'Вес пациента',
@@ -244,7 +244,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param4',
       :name_in_view => 'Окр. гр. кл.',
       :description => 'Окружность грудной клетки',
@@ -252,7 +252,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param5',
       :name_in_view => 'Темпер.',
       :description => 'Температура тела',
@@ -260,7 +260,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param6',
       :name_in_view => 'АД сист.',
       :description => 'Артериальное давление систолическое',
@@ -268,7 +268,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param7',
       :name_in_view => 'АД диаст.',
       :description => 'Артериальное давление диастолическое',
@@ -276,7 +276,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param8',
       :name_in_view => 'ЧСС',
       :description => 'Частота сердечных сокращений в минуту',
@@ -284,7 +284,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param9',
       :name_in_view => 'ЧД',
       :description => 'Частота дыхания в минуту',
@@ -292,7 +292,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param10',
       :name_in_view => 'Профстаж',
       :description => 'Стаж профессиональный',
@@ -300,7 +300,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param11',
       :name_in_view => 'Стаж общ.',
       :description => 'Стаж общий',
@@ -308,7 +308,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param12',
       :name_in_view => 'КСН',
       :description => 'Количество случаев нетрудоспособности',
@@ -316,7 +316,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param13',
       :name_in_view => 'КДН',
       :description => 'Количество дней нетрудоспособности',
@@ -324,7 +324,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param14',
       :name_in_view => 'Длит. заб.',
       :description => 'Длительность заболевания',
@@ -332,7 +332,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param15',
       :name_in_view => 'Лет в дм',
       :description => 'Продолжительность жизни в данной местности',
@@ -340,7 +340,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param16',
       :name_in_view => 'Стаж кур.',
       :description => 'Стаж курения',
@@ -348,7 +348,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param17',
       :name_in_view => 'Возр. кур.',
       :description => 'С какого возраста начал курить',
@@ -356,7 +356,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param18',
       :name_in_view => 'Числ. сиг.',
       :description => 'Количество выкуриваемых сигарет в день',
@@ -364,7 +364,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param19',
       :name_in_view => 'ИК',
       :description => 'Индекс курильщика',
@@ -372,7 +372,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param20',
       :name_in_view => 'ИК п/лет',
       :description => 'Индекс курильщика "пачка/лет"',
@@ -380,7 +380,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param21',
       :name_in_view => 'Дл. воз. от к.',
       :description => 'Длительность воздержания от курения',
@@ -388,7 +388,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'objective_datas' ,
+      :model_id => 5,
       :name_in_model => 'param22',
       :name_in_view => 'Руб/мес',
       :description => 'Количество денег, затрачиваемых в месяц на сигареты',
@@ -403,7 +403,7 @@ class AddMetadata < ActiveRecord::Migration
 #
 ############################################################################
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param1',
       :name_in_view => 'Эритроц.',
       :description => 'Эритроциты',
@@ -411,7 +411,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param2',
       :name_in_view => 'Hb',
       :description => 'Гемоглобин',
@@ -419,7 +419,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param3',
       :name_in_view => 'Цвет.п.',
       :description => 'Цветной показатель',
@@ -427,7 +427,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param4',
       :name_in_view => 'Ретикул.',
       :description => 'Ретикулоциты',
@@ -435,7 +435,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param5',
       :name_in_view => 'Лейкоц.',
       :description => 'Лейкоциты',
@@ -443,7 +443,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param6',
       :name_in_view => 'П/я',
       :description => 'Палочкоядерные клетки',
@@ -451,7 +451,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param7',
       :name_in_view => 'С/я',
       :description => 'Сегментоядерные клетки',
@@ -459,7 +459,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param8',
       :name_in_view => 'Эоз.',
       :description => 'Эозинофилы',
@@ -467,7 +467,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param9',
       :name_in_view => 'Баз.',
       :description => 'Базофилы',
@@ -475,7 +475,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param10',
       :name_in_view => 'Мон.',
       :description => 'Моноциты',
@@ -483,7 +483,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param11',
       :name_in_view => 'Лим.',
       :description => 'Лимфоциты',
@@ -491,7 +491,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param12',
       :name_in_view => 'Тромб.',
       :description => 'Тромбоциты',
@@ -499,7 +499,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param13',
       :name_in_view => 'СОЭ',
       :description => 'Скорость оседания эритроцитов',
@@ -507,7 +507,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param14',
       :name_in_view => 'Глюкоза',
       :description => 'Глюкоза',
@@ -515,7 +515,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param15',
       :name_in_view => 'О. белок',
       :description => 'Общий белок',
@@ -523,7 +523,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param16',
       :name_in_view => 'Мочевина',
       :description => 'Мочевина крови',
@@ -531,7 +531,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param17',
       :name_in_view => 'Креатин.',
       :description => 'Креатинин',
@@ -539,7 +539,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param18',
       :name_in_view => 'Бил.общ.',
       :description => 'Билирубин общий',
@@ -547,7 +547,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param19',
       :name_in_view => 'Бил.пр.',
       :description => 'Билирубин прямой',
@@ -555,7 +555,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param20',
       :name_in_view => 'Бил.непр.',
       :description => 'Билирубин непрямой',
@@ -563,7 +563,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param21',
       :name_in_view => 'Фибрин',
       :description => 'Фибриноген',
@@ -571,7 +571,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param22',
       :name_in_view => 'ПТИ',
       :description => 'Протромбиновый индекс',
@@ -579,7 +579,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param23',
       :name_in_view => 'Холест.',
       :description => 'Холестерин',
@@ -587,7 +587,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param24',
       :name_in_view => 'Тим.пр.',
       :description => 'Тимоловая проба',
@@ -595,7 +595,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param25',
       :name_in_view => 'Сулем.пр.',
       :description => 'Сулемовая проба',
@@ -603,7 +603,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param26',
       :name_in_view => 'АЛАТ',
       :description => 'Аланиаминотрансфераза',
@@ -611,7 +611,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param27',
       :name_in_view => 'АСАТ',
       :description => 'Аспартатаминотрансфераза',
@@ -619,7 +619,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param28',
       :name_in_view => 'СРБ',
       :description => '"С" реактивный белок',
@@ -627,7 +627,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'laboratory_blood_tests' ,
+      :model_id => 6,
       :name_in_model => 'param29',
       :name_in_view => 'Серомук',
       :description => 'Серомукоид',
@@ -642,7 +642,7 @@ class AddMetadata < ActiveRecord::Migration
 #
 ############################################################################
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param1',
       :name_in_view => 'pH',
       :description => 'Активность ионов водорода',
@@ -650,7 +650,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param2',
       :name_in_view => 'pO2',
       :description => 'Парциальное давление кислорода',
@@ -658,7 +658,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param3',
       :name_in_view => 'pCO2',
       :description => 'Парциальное давление двуокиси углерода',
@@ -666,7 +666,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param4',
       :name_in_view => 'Глюкоза',
       :description => 'Глюкоза крови',
@@ -674,7 +674,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param5',
       :name_in_view => 'Лактат',
       :description => 'Лактат крови',
@@ -682,7 +682,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param6',
       :name_in_view => 'Натрий',
       :description => 'Натрий крови',
@@ -690,7 +690,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param7',
       :name_in_view => 'Калий',
       :description => 'Калий крови',
@@ -698,7 +698,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param8',
       :name_in_view => 'Кальций',
       :description => 'Кальций крови',
@@ -706,7 +706,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param9',
       :name_in_view => 'Окр. ЭК',
       :description => 'Округлые эпителиальные клетки',
@@ -714,7 +714,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param10',
       :name_in_view => 'Б.ЭК',
       :description => 'Безъядерные эпителиальные клетки',
@@ -722,7 +722,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param11',
       :name_in_view => 'Атип.ЭК',
       :description => 'Атипичные эпителиальные клетки',
@@ -730,7 +730,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param12',
       :name_in_view => 'Неиз.МК',
       :description => 'Неизмененные мерцательные клетки',
@@ -738,7 +738,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param13',
       :name_in_view => 'Кл. без р.',
       :description => 'Клетки, лишенные ресничек',
@@ -746,7 +746,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param14',
       :name_in_view => 'Бокал.кл.',
       :description => 'Бокаловидные клетки',
@@ -754,7 +754,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param15',
       :name_in_view => 'Пром.кл.',
       :description => 'Промежуточные клетки',
@@ -762,7 +762,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param16',
       :name_in_view => 'Камб.кл.',
       :description => 'Камболавидные клетки',
@@ -770,7 +770,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param17',
       :name_in_view => 'Эозин.',
       :description => 'Эозинофилы',
@@ -778,7 +778,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param18',
       :name_in_view => 'Эозин. р.',
       :description => 'Эозинофилы разрушенные',
@@ -786,7 +786,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param19',
       :name_in_view => 'Нейтр.',
       :description => 'Нейтрофилы',
@@ -794,7 +794,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param20',
       :name_in_view => 'Нейтр. р.',
       :description => 'Нейтрофилы разрушенные',
@@ -802,7 +802,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param21',
       :name_in_view => 'Макроф.',
       :description => 'Макрофаги',
@@ -810,7 +810,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param22',
       :name_in_view => 'Лимф.',
       :description => 'Лимфоциты',
@@ -818,7 +818,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'citology_tests' ,
+      :model_id => 7,
       :name_in_model => 'param23',
       :name_in_view => 'Др.клетк.',
       :description => 'Другие клетки',
@@ -833,7 +833,7 @@ class AddMetadata < ActiveRecord::Migration
 #
 ############################################################################
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param1',
       :name_in_view => 'Гематокр.',
       :description => 'Гематокрит',
@@ -841,7 +841,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param2',
       :name_in_view => 'Hb в эр.',
       :description => 'Среднее содержание гемоглобина в 1 эритроците',
@@ -849,7 +849,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param3',
       :name_in_view => 'Ср. Hb эр.',
       :description => 'Средняя концентрация гемоглобина в 1 эритроците',
@@ -857,7 +857,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param4',
       :name_in_view => 'ОксиHb',
       :description => 'Оксигемоглобин',
@@ -865,7 +865,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param5',
       :name_in_view => 'МетHb',
       :description => 'Метгемоглобин',
@@ -873,7 +873,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param6',
       :name_in_view => 'Об. фос. эр.',
       :description => 'Общий фосфор эритроцитов',
@@ -881,7 +881,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param7',
       :name_in_view => 'ДФГ об.',
       :description => 'Дифосфоглицерат общий',
@@ -889,7 +889,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param8',
       :name_in_view => 'ДФГ/Н',
       :description => 'Дифосфоглицерат на 1 грамм гемоглобина',
@@ -897,7 +897,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param9',
       :name_in_view => 'АТФ общ.',
       :description => 'АТФ общий',
@@ -905,7 +905,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param10',
       :name_in_view => 'K в пла',
       :description => 'Калий плазмы',
@@ -913,7 +913,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param11',
       :name_in_view => 'Na в пла',
       :description => 'Натрий плазмы',
@@ -921,7 +921,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param12',
       :name_in_view => 'K в эр',
       :description => 'Калий в эритроците',
@@ -929,7 +929,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param13',
       :name_in_view => 'Na в эр',
       :description => 'Натрий в эритроците',
@@ -937,7 +937,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param14',
       :name_in_view => 'Стр. эпит.',
       :description => 'Строение эпителия',
@@ -945,7 +945,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param15',
       :name_in_view => 'Баз.мемб.',
       :description => 'Базальная мембрана',
@@ -953,7 +953,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param16',
       :name_in_view => 'Инфильтр',
       :description => 'Инфильтрация',
@@ -961,7 +961,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param17',
       :name_in_view => 'Отек',
       :description => 'Отек',
@@ -969,7 +969,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param18',
       :name_in_view => 'Вол.стр.',
       :description => 'Волокнистые структуры',
@@ -977,7 +977,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param19',
       :name_in_view => 'Жел.эп.',
       :description => 'Состояние железистого эпителия',
@@ -985,7 +985,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param20',
       :name_in_view => 'Мыш.эл.',
       :description => 'Содержание мышечных элементов',
@@ -993,7 +993,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param21',
       :name_in_view => 'Индекс',
       :description => 'Индекс морфофункционального содержания мышечных элементов',
@@ -1001,7 +1001,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param22',
       :name_in_view => 'КПИ',
       :description => 'Кариопикнотический индекс',
@@ -1009,7 +1009,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param23',
       :name_in_view => 'ИАЭ',
       :description => 'Индекс активности эндобронхита',
@@ -1017,7 +1017,7 @@ class AddMetadata < ActiveRecord::Migration
       :locale => 'ru'
     )
     Metadata.create(
-      :model => 'endoscopic_tests' ,
+      :model_id => 8,
       :name_in_model => 'param24',
       :name_in_view => 'ИВ%',
       :description => 'Индекс воспаления',

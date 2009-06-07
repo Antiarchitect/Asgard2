@@ -1,7 +1,7 @@
 class CreateMetadatas < ActiveRecord::Migration
   def self.up
     create_table :metadatas do |t|
-      t.string :model
+      t.integer :model_id
       t.string :name_in_model
       t.string :name_in_view
       t.string :description
