@@ -221,7 +221,7 @@ class AddMetadata < ActiveRecord::Migration
 ############################################################################
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param1',
+      :name_in_model => '1',
       :name_in_view => 'Возраст',
       :description => 'Возраст пациента',
       :unit => 'лет',
@@ -229,7 +229,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param2',
+      :name_in_model => '2',
       :name_in_view => 'Рост',
       :description => 'Рост пациента',
       :unit => 'см',
@@ -237,7 +237,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param3',
+      :name_in_model => '3',
       :name_in_view => 'Вес',
       :description => 'Вес пациента',
       :unit => 'кг',
@@ -245,7 +245,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param4',
+      :name_in_model => '4',
       :name_in_view => 'Окр. гр. кл.',
       :description => 'Окружность грудной клетки',
       :unit => 'см',
@@ -253,7 +253,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param5',
+      :name_in_model => '5',
       :name_in_view => 'Темпер.',
       :description => 'Температура тела',
       :unit => '°C',
@@ -261,7 +261,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param6',
+      :name_in_model => '6',
       :name_in_view => 'АД сист.',
       :description => 'Артериальное давление систолическое',
       :unit => 'мм рт.ст.',
@@ -269,7 +269,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param7',
+      :name_in_model => '7',
       :name_in_view => 'АД диаст.',
       :description => 'Артериальное давление диастолическое',
       :unit => 'мм рт.ст.',
@@ -277,7 +277,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param8',
+      :name_in_model => '8',
       :name_in_view => 'ЧСС',
       :description => 'Частота сердечных сокращений в минуту',
       :unit => '',
@@ -285,7 +285,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param9',
+      :name_in_model => '9',
       :name_in_view => 'ЧД',
       :description => 'Частота дыхания в минуту',
       :unit => '',
@@ -293,7 +293,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param10',
+      :name_in_model => '10',
       :name_in_view => 'Профстаж',
       :description => 'Стаж профессиональный',
       :unit => 'лет',
@@ -301,7 +301,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param11',
+      :name_in_model => '11',
       :name_in_view => 'Стаж общ.',
       :description => 'Стаж общий',
       :unit => 'лет',
@@ -309,7 +309,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param12',
+      :name_in_model => '12',
       :name_in_view => 'КСН',
       :description => 'Количество случаев нетрудоспособности',
       :unit => 'Дней в году',
@@ -317,7 +317,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param13',
+      :name_in_model => '13',
       :name_in_view => 'КДН',
       :description => 'Количество дней нетрудоспособности',
       :unit => 'дней',
@@ -325,7 +325,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param14',
+      :name_in_model => '14',
       :name_in_view => 'Длит. заб.',
       :description => 'Длительность заболевания',
       :unit => 'лет',
@@ -333,7 +333,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param15',
+      :name_in_model => '15',
       :name_in_view => 'Лет в дм',
       :description => 'Продолжительность жизни в данной местности',
       :unit => 'лет',
@@ -341,7 +341,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param16',
+      :name_in_model => '16',
       :name_in_view => 'Стаж кур.',
       :description => 'Стаж курения',
       :unit => 'лет',
@@ -349,7 +349,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param17',
+      :name_in_model => '17',
       :name_in_view => 'Возр. кур.',
       :description => 'С какого возраста начал курить',
 #      :unit => 'лет',
@@ -357,7 +357,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param18',
+      :name_in_model => '18',
       :name_in_view => 'Числ. сиг.',
       :description => 'Количество выкуриваемых сигарет в день',
       :unit => 'штук',
@@ -365,7 +365,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param19',
+      :name_in_model => '19',
       :name_in_view => 'ИК',
       :description => 'Индекс курильщика',
       :unit => 'Числ. сиг. x 12',
@@ -373,7 +373,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param20',
+      :name_in_model => '20',
       :name_in_view => 'ИК п/лет',
       :description => 'Индекс курильщика "пачка/лет"',
       :unit => 'Числ. сиг. x Стаж кур. / 20',
@@ -381,7 +381,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param21',
+      :name_in_model => '21',
       :name_in_view => 'Дл. воз. от к.',
       :description => 'Длительность воздержания от курения',
       :unit => 'лет',
@@ -389,7 +389,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 5,
-      :name_in_model => 'param22',
+      :name_in_model => '22',
       :name_in_view => 'Руб/мес',
       :description => 'Количество денег, затрачиваемых в месяц на сигареты',
       :unit => 'рублей',
@@ -404,7 +404,7 @@ class AddMetadata < ActiveRecord::Migration
 ############################################################################
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param1',
+      :name_in_model => '1',
       :name_in_view => 'Эритроц.',
       :description => 'Эритроциты',
       :unit => 'x(10^12)/л',
@@ -412,7 +412,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param2',
+      :name_in_model => '2',
       :name_in_view => 'Hb',
       :description => 'Гемоглобин',
       :unit => 'г/л',
@@ -420,7 +420,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param3',
+      :name_in_model => '3',
       :name_in_view => 'Цвет.п.',
       :description => 'Цветной показатель',
       :unit => '',
@@ -428,7 +428,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param4',
+      :name_in_model => '4',
       :name_in_view => 'Ретикул.',
       :description => 'Ретикулоциты',
       :unit => '%',
@@ -436,7 +436,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param5',
+      :name_in_model => '5',
       :name_in_view => 'Лейкоц.',
       :description => 'Лейкоциты',
       :unit => 'x(10^9)/л',
@@ -444,7 +444,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param6',
+      :name_in_model => '6',
       :name_in_view => 'П/я',
       :description => 'Палочкоядерные клетки',
       :unit => '%',
@@ -452,7 +452,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param7',
+      :name_in_model => '7',
       :name_in_view => 'С/я',
       :description => 'Сегментоядерные клетки',
       :unit => '%',
@@ -460,7 +460,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param8',
+      :name_in_model => '8',
       :name_in_view => 'Эоз.',
       :description => 'Эозинофилы',
       :unit => '%',
@@ -468,7 +468,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param9',
+      :name_in_model => '9',
       :name_in_view => 'Баз.',
       :description => 'Базофилы',
       :unit => '%',
@@ -476,7 +476,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param10',
+      :name_in_model => '10',
       :name_in_view => 'Мон.',
       :description => 'Моноциты',
       :unit => '%',
@@ -484,7 +484,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param11',
+      :name_in_model => '11',
       :name_in_view => 'Лим.',
       :description => 'Лимфоциты',
       :unit => '%',
@@ -492,7 +492,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param12',
+      :name_in_model => '12',
       :name_in_view => 'Тромб.',
       :description => 'Тромбоциты',
       :unit => 'x(10^9)/л',
@@ -500,7 +500,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param13',
+      :name_in_model => '13',
       :name_in_view => 'СОЭ',
       :description => 'Скорость оседания эритроцитов',
       :unit => 'мм/час',
@@ -508,7 +508,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param14',
+      :name_in_model => '14',
       :name_in_view => 'Глюкоза',
       :description => 'Глюкоза',
       :unit => 'ммоль/л',
@@ -516,7 +516,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param15',
+      :name_in_model => '15',
       :name_in_view => 'О. белок',
       :description => 'Общий белок',
       :unit => 'г/л',
@@ -524,7 +524,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param16',
+      :name_in_model => '16',
       :name_in_view => 'Мочевина',
       :description => 'Мочевина крови',
       :unit => 'мкмоль/л',
@@ -532,7 +532,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param17',
+      :name_in_model => '17',
       :name_in_view => 'Креатин.',
       :description => 'Креатинин',
       :unit => 'мкмоль/л',
@@ -540,7 +540,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param18',
+      :name_in_model => '18',
       :name_in_view => 'Бил.общ.',
       :description => 'Билирубин общий',
       :unit => 'мкмоль/л',
@@ -548,7 +548,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param19',
+      :name_in_model => '19',
       :name_in_view => 'Бил.пр.',
       :description => 'Билирубин прямой',
       :unit => 'мкмоль/л',
@@ -556,7 +556,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param20',
+      :name_in_model => '20',
       :name_in_view => 'Бил.непр.',
       :description => 'Билирубин непрямой',
       :unit => 'мкмоль/л',
@@ -564,7 +564,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param21',
+      :name_in_model => '21',
       :name_in_view => 'Фибрин',
       :description => 'Фибриноген',
       :unit => 'г/л',
@@ -572,7 +572,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param22',
+      :name_in_model => '22',
       :name_in_view => 'ПТИ',
       :description => 'Протромбиновый индекс',
       :unit => '%',
@@ -580,7 +580,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param23',
+      :name_in_model => '23',
       :name_in_view => 'Холест.',
       :description => 'Холестерин',
       :unit => 'ммоль/л',
@@ -588,7 +588,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param24',
+      :name_in_model => '24',
       :name_in_view => 'Тим.пр.',
       :description => 'Тимоловая проба',
       :unit => 'ед.S-H.',
@@ -596,7 +596,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param25',
+      :name_in_model => '25',
       :name_in_view => 'Сулем.пр.',
       :description => 'Сулемовая проба',
       :unit => 'ед. Сулемы',
@@ -604,7 +604,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param26',
+      :name_in_model => '26',
       :name_in_view => 'АЛАТ',
       :description => 'Аланиаминотрансфераза',
       :unit => 'МЕ/л',
@@ -612,7 +612,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param27',
+      :name_in_model => '27',
       :name_in_view => 'АСАТ',
       :description => 'Аспартатаминотрансфераза',
       :unit => 'МЕ/л',
@@ -620,7 +620,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param28',
+      :name_in_model => '28',
       :name_in_view => 'СРБ',
       :description => '"С" реактивный белок',
       :unit => '1 - положительный, 2 - отрицательный',
@@ -628,7 +628,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 6,
-      :name_in_model => 'param29',
+      :name_in_model => '29',
       :name_in_view => 'Серомук',
       :description => 'Серомукоид',
       :unit => 'усл. ед.',
@@ -643,7 +643,7 @@ class AddMetadata < ActiveRecord::Migration
 ############################################################################
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param1',
+      :name_in_model => '1',
       :name_in_view => 'pH',
       :description => 'Активность ионов водорода',
       :unit => 'кислотность крови',
@@ -651,7 +651,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param2',
+      :name_in_model => '2',
       :name_in_view => 'pO2',
       :description => 'Парциальное давление кислорода',
       :unit => 'мм рт.ст.',
@@ -659,7 +659,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param3',
+      :name_in_model => '3',
       :name_in_view => 'pCO2',
       :description => 'Парциальное давление двуокиси углерода',
       :unit => 'мм рт.ст.',
@@ -667,7 +667,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param4',
+      :name_in_model => '4',
       :name_in_view => 'Глюкоза',
       :description => 'Глюкоза крови',
       :unit => 'ммоль/л',
@@ -675,7 +675,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param5',
+      :name_in_model => '5',
       :name_in_view => 'Лактат',
       :description => 'Лактат крови',
       :unit => 'ммоль/л',
@@ -683,7 +683,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param6',
+      :name_in_model => '6',
       :name_in_view => 'Натрий',
       :description => 'Натрий крови',
       :unit => 'ммоль/л',
@@ -691,7 +691,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param7',
+      :name_in_model => '7',
       :name_in_view => 'Калий',
       :description => 'Калий крови',
       :unit => 'ммоль/л',
@@ -699,7 +699,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param8',
+      :name_in_model => '8',
       :name_in_view => 'Кальций',
       :description => 'Кальций крови',
       :unit => 'ммоль/л',
@@ -707,7 +707,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param9',
+      :name_in_model => '9',
       :name_in_view => 'Окр. ЭК',
       :description => 'Округлые эпителиальные клетки',
       :unit => '%',
@@ -715,7 +715,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param10',
+      :name_in_model => '10',
       :name_in_view => 'Б.ЭК',
       :description => 'Безъядерные эпителиальные клетки',
       :unit => '%',
@@ -723,7 +723,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param11',
+      :name_in_model => '11',
       :name_in_view => 'Атип.ЭК',
       :description => 'Атипичные эпителиальные клетки',
       :unit => '%',
@@ -731,7 +731,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param12',
+      :name_in_model => '12',
       :name_in_view => 'Неиз.МК',
       :description => 'Неизмененные мерцательные клетки',
       :unit => '%',
@@ -739,7 +739,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param13',
+      :name_in_model => '13',
       :name_in_view => 'Кл. без р.',
       :description => 'Клетки, лишенные ресничек',
       :unit => '%',
@@ -747,7 +747,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param14',
+      :name_in_model => '14',
       :name_in_view => 'Бокал.кл.',
       :description => 'Бокаловидные клетки',
       :unit => '%',
@@ -755,7 +755,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param15',
+      :name_in_model => '15',
       :name_in_view => 'Пром.кл.',
       :description => 'Промежуточные клетки',
       :unit => '%',
@@ -763,7 +763,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param16',
+      :name_in_model => '16',
       :name_in_view => 'Камб.кл.',
       :description => 'Камболавидные клетки',
       :unit => '%',
@@ -771,7 +771,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param17',
+      :name_in_model => '17',
       :name_in_view => 'Эозин.',
       :description => 'Эозинофилы',
       :unit => '%',
@@ -779,7 +779,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param18',
+      :name_in_model => '18',
       :name_in_view => 'Эозин. р.',
       :description => 'Эозинофилы разрушенные',
       :unit => '%',
@@ -787,7 +787,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param19',
+      :name_in_model => '19',
       :name_in_view => 'Нейтр.',
       :description => 'Нейтрофилы',
       :unit => '%',
@@ -795,7 +795,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param20',
+      :name_in_model => '20',
       :name_in_view => 'Нейтр. р.',
       :description => 'Нейтрофилы разрушенные',
       :unit => '%',
@@ -803,7 +803,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param21',
+      :name_in_model => '21',
       :name_in_view => 'Макроф.',
       :description => 'Макрофаги',
       :unit => '%',
@@ -811,7 +811,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param22',
+      :name_in_model => '22',
       :name_in_view => 'Лимф.',
       :description => 'Лимфоциты',
       :unit => '%',
@@ -819,7 +819,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 7,
-      :name_in_model => 'param23',
+      :name_in_model => '23',
       :name_in_view => 'Др.клетк.',
       :description => 'Другие клетки',
       :unit => '%',
@@ -834,7 +834,7 @@ class AddMetadata < ActiveRecord::Migration
 ############################################################################
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param1',
+      :name_in_model => '1',
       :name_in_view => 'Гематокр.',
       :description => 'Гематокрит',
       :unit => '%',
@@ -842,7 +842,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param2',
+      :name_in_model => '2',
       :name_in_view => 'Hb в эр.',
       :description => 'Среднее содержание гемоглобина в 1 эритроците',
       :unit => 'пг',
@@ -850,7 +850,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param3',
+      :name_in_model => '3',
       :name_in_view => 'Ср. Hb эр.',
       :description => 'Средняя концентрация гемоглобина в 1 эритроците',
       :unit => '%',
@@ -858,7 +858,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param4',
+      :name_in_model => '4',
       :name_in_view => 'ОксиHb',
       :description => 'Оксигемоглобин',
       :unit => '%',
@@ -866,7 +866,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param5',
+      :name_in_model => '5',
       :name_in_view => 'МетHb',
       :description => 'Метгемоглобин',
       :unit => '%',
@@ -874,7 +874,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param6',
+      :name_in_model => '6',
       :name_in_view => 'Об. фос. эр.',
       :description => 'Общий фосфор эритроцитов',
       :unit => 'ммоль/л',
@@ -882,7 +882,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param7',
+      :name_in_model => '7',
       :name_in_view => 'ДФГ об.',
       :description => 'Дифосфоглицерат общий',
       :unit => 'ммоль/л',
@@ -890,7 +890,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param8',
+      :name_in_model => '8',
       :name_in_view => 'ДФГ/Н',
       :description => 'Дифосфоглицерат на 1 грамм гемоглобина',
       :unit => 'ммоль/л',
@@ -898,7 +898,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param9',
+      :name_in_model => '9',
       :name_in_view => 'АТФ общ.',
       :description => 'АТФ общий',
       :unit => 'ммоль/л',
@@ -906,7 +906,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param10',
+      :name_in_model => '10',
       :name_in_view => 'K в пла',
       :description => 'Калий плазмы',
       :unit => 'ммоль/л',
@@ -914,7 +914,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param11',
+      :name_in_model => '11',
       :name_in_view => 'Na в пла',
       :description => 'Натрий плазмы',
       :unit => 'ммоль/л',
@@ -922,7 +922,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param12',
+      :name_in_model => '12',
       :name_in_view => 'K в эр',
       :description => 'Калий в эритроците',
       :unit => 'ммоль/л',
@@ -930,7 +930,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param13',
+      :name_in_model => '13',
       :name_in_view => 'Na в эр',
       :description => 'Натрий в эритроците',
       :unit => 'ммоль/л',
@@ -938,7 +938,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param14',
+      :name_in_model => '14',
       :name_in_view => 'Стр. эпит.',
       :description => 'Строение эпителия',
       :unit => '1 - норма, -1 - паталогически изменен',
@@ -946,7 +946,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param15',
+      :name_in_model => '15',
       :name_in_view => 'Баз.мемб.',
       :description => 'Базальная мембрана',
       :unit => 'мкн',
@@ -954,7 +954,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param16',
+      :name_in_model => '16',
       :name_in_view => 'Инфильтр',
       :description => 'Инфильтрация',
       :unit => '1 - норма, -1, выраженная',
@@ -962,7 +962,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param17',
+      :name_in_model => '17',
       :name_in_view => 'Отек',
       :description => 'Отек',
       :unit => '1 - норма, -1 = выраженный',
@@ -970,7 +970,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param18',
+      :name_in_model => '18',
       :name_in_view => 'Вол.стр.',
       :description => 'Волокнистые структуры',
       :unit => '1 - норма, -1 - паталогия',
@@ -978,7 +978,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param19',
+      :name_in_model => '19',
       :name_in_view => 'Жел.эп.',
       :description => 'Состояние железистого эпителия',
       :unit => '1 - норма, -1 - паталогия',
@@ -986,7 +986,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param20',
+      :name_in_model => '20',
       :name_in_view => 'Мыш.эл.',
       :description => 'Содержание мышечных элементов',
       :unit => '%',
@@ -994,7 +994,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param21',
+      :name_in_model => '21',
       :name_in_view => 'Индекс',
       :description => 'Индекс морфофункционального содержания мышечных элементов',
       :unit => '',
@@ -1002,7 +1002,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param22',
+      :name_in_model => '22',
       :name_in_view => 'КПИ',
       :description => 'Кариопикнотический индекс',
       :unit => '',
@@ -1010,7 +1010,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param23',
+      :name_in_model => '23',
       :name_in_view => 'ИАЭ',
       :description => 'Индекс активности эндобронхита',
       :unit => '%',
@@ -1018,7 +1018,7 @@ class AddMetadata < ActiveRecord::Migration
     )
     Metadata.create(
       :model_id => 8,
-      :name_in_model => 'param24',
+      :name_in_model => '24',
       :name_in_view => 'ИВ%',
       :description => 'Индекс воспаления',
       :unit => '%',

@@ -9,20 +9,20 @@ class ObjectiveDatasController < ApplicationController
     count_2 = 0
     @metadata = Metadata.find_metadatas('objective_datas', 'ru')
     @metadata.each do |meta|
-      count_1 += 1
-      unless config.columns[meta.name_in_model].nil?
+      name = 'param' + meta.name_in_model
+      unless config.columns[name].nil?
         count_2 += 1
-        config.columns[meta.name_in_model].label = meta.name_in_view
-        config.columns[meta.name_in_model].description = meta.description
+        config.columns[name].label = meta.name_in_view
+        config.columns[name].description = meta.description
         if meta.unit.blank?
-          config.columns[meta.name_in_model].description = meta.description
+          config.columns[name].description = meta.description
         else
-          config.columns[meta.name_in_model].description = meta.description + ' (' + meta.unit + ')'
+          config.columns[name].description = meta.description + ' (' + meta.unit + ')'
         end
-        config.create.columns << meta.name_in_model
-        config.list.columns << meta.name_in_model
-        config.show.columns << meta.name_in_model
-        config.update.columns << meta.name_in_model
+        config.create.columns << name
+        config.list.columns << name
+        config.show.columns << name
+        config.update.columns << name
       end
     end
     config.label = count_1.to_s + ' ' + count_2.to_s + 'Объективные данные пациента'
