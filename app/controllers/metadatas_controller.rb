@@ -8,7 +8,7 @@ class MetadatasController < ApplicationController
     config.columns[:model_id].label = 'Категория'
     
     config.create.columns = [:model_id, :name_in_view, :description, :unit]
-    config.list.columns = [:model_id, :name_in_view, :description, :unit, :locale, :name_in_model]
+    config.list.columns = [:name_in_view, :description, :unit]
     config.show.columns = [:name_in_view, :description, :unit]
     config.update.columns = [:model_id, :name_in_view, :description, :unit]
   end
@@ -23,8 +23,7 @@ class MetadatasController < ApplicationController
       if name == counter
         counter += 1
       else
-        last = counter
-        record.name_in_model = last
+        record.name_in_model = counter
         break
       end
     end
