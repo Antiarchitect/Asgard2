@@ -17,8 +17,17 @@ class MetadatasController < ApplicationController
 
   def before_create_save(record)
     record.locale ='ru'         
-    last = Metadata.find_numerical_names_in_model(record.model_id, record.locale).max
-    record.name_in_model = last + 1
+    names_in_model = Metadata.find_numerical_names_in_model(record.model_id, record.locale)
+    counter = 1
+    names_in_model.each do |name|
+      if name == counter
+        counter += 1
+      else
+        last = counter
+        record.name_in_model = last
+        break
+      end
+    end
   end
 
   def before_update_save(record)
