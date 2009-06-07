@@ -9,4 +9,8 @@ class Model < ActiveRecord::Base
       flash[:notice] = 'База данных "Типы анализов" пуста'
     end
   end
+
+  def self.find_models
+    find(:all)
+  end
 end

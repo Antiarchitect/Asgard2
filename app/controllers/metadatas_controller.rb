@@ -5,10 +5,11 @@ class MetadatasController < ApplicationController
     config.columns[:name_in_view].label = 'Название'
     config.columns[:description].label = 'Описание'
     config.columns[:unit].label = 'Единица измерения (необязательно)'
+    config.columns[:model].label = 'Категория'
     
     config.create.columns = [:model, :name_in_view, :description, :unit]
     config.list.columns = [:name_in_view, :description, :unit]
     config.show.columns = [:name_in_view, :description, :unit]
-    config.update.columns = [:name_in_view, :description, :unit]
+    config.update.columns = [:model, :name_in_view, :description, :unit]
   end
 end
