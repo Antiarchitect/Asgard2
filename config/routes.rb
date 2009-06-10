@@ -12,7 +12,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :objective_datas, :active_scaffold => true
   map.resources :doctoral_conclusions, :active_scaffold => true
   map.resources :metadatas, :active_scaffold => true
-  map.root :controller => "patients"
+  map.root :controller => 'patients'
 #  map.login "login", :controller => user_sessions, :action => new
 #  map.login "logout", :controller => user_sessions, :action => destroy
 end

@@ -102,11 +102,6 @@ class Patient < ActiveRecord::Base
     end
   end
 
-
-
-  
-
-
   def to_label
     'пациента'
   end
